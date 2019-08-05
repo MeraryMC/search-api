@@ -21,7 +21,7 @@ const router = express_1.default();
 utils_1.applyMiddleware(middleware_1.default, router);
 utils_1.applyRoutes(services_1.default, router);
 utils_1.applyMiddleware(errorHandlers_1.default, router);
-const { PORT = 4000 } = process.env;
+const { PORT = 3000 } = process.env;
 const server = http_1.default.createServer(router);
 server.listen(PORT, () => console.log(`Server is running http://localhost:${PORT}...`));
 //# sourceMappingURL=server.js.map
